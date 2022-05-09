@@ -1,0 +1,11 @@
+.List{
+    display: flex;
+    flex-direction: column;
+    background-color:lightgray;
+    position: relative;
+    top:20px;
+    border-radius: 3px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px
+}

@@ -1,0 +1,36 @@
+.Nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #1c1e24;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    height: 50px;
+    font-size: 12px;
+    color:white;
+}
+
+.img{
+    position:absolute;
+    left: 10px;
+    top:5px;
+}
+
+.about{
+   position: absolute;
+   right: 10px;
+   text-decoration: none;
+   color:white;
+}
+
+.about:hover{
+    color: gray;
+}
+
+
+@media (max-width: 500px){
+    .Nav{
+        padding-left: 10px;
+    }
+}

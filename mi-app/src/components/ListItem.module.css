@@ -1,0 +1,38 @@
+.item{
+    background-color: rgb(197, 196, 196);
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    right: 5px;
+    background-color: rgb(247, 56, 56);
+    outline: 1px solid;
+    border: none;
+}
+
+.btn:hover{
+    background-color: red;
+    transform: scale(1.1) perspective(1px);
+}
+
+.checkbox{
+    height: 20px;
+    width: 15px;
+}
+
+.text{
+    font-size: large;
+    color:black
+}
+
+.checkedText{
+    font-size: large;
+    color:black;
+    text-decoration: line-through;
+}
