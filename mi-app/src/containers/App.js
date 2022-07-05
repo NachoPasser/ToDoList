@@ -11,7 +11,7 @@ class App extends Component{
       items : [],
     }
   
-    this.addTask = this.addTask.bind(this); //lo   bindeo porque sino el this no funciona.
+    this.addTask = this.addTask.bind(this); //lo  bindeo porque sino el this no funciona.
   }
 
   addTask(task){
