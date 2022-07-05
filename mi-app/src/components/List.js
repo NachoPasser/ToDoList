@@ -13,7 +13,7 @@ class List extends Component{
   // constructor(props){
   //   super(props)
   //   this.state = {
-  //     items : [],
+  //     items : [], 
   //   }
   
   //   this.addTask = this.addTask.bind(this); //lo bindeo porque sino el this no funciona.
