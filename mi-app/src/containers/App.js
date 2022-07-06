@@ -21,7 +21,11 @@ class App extends Component{
       }) //en los componentes de clases no haces return tal, tenes que pasar un obj que tenga la prop a modificar
     }
   }
-
+  
+  deleteTask(xd){
+    console.log(xd)
+  }
+  
   onClose = (i) => { //esta no es necesario bindearla porque al ser un arrow function se bindea de una
     let newItems = this.state.items.filter(item => item !== i)
     this.setState({items : newItems})
