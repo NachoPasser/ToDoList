@@ -22,10 +22,6 @@ class App extends Component{
     }
   }
   
-  deleteTask(xd){
-    console.log(xd)
-  }
-  
   onClose = (i) => { //esta no es necesario bindearla porque al ser un arrow function se bindea de una
     let newItems = this.state.items.filter(item => item !== i)
     this.setState({items : newItems})
