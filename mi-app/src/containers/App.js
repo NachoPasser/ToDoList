@@ -22,6 +22,10 @@ class App extends Component{
     }
   }
   
+  jajaja(d){
+    console.log(d)
+  }
+  
   onClose = (i) => { //esta no es necesario bindearla porque al ser un arrow function se bindea de una
     let newItems = this.state.items.filter(item => item !== i)
     this.setState({items : newItems})
