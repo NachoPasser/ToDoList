@@ -22,8 +22,8 @@ class App extends Component{
     }
   }
   
-  jajaja(d){
-    console.log(d)
+  lol(xd){
+    console.log(xd)
   }
   
   onClose = (i) => { //esta no es necesario bindearla porque al ser un arrow function se bindea de una
