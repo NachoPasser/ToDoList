@@ -2,12 +2,13 @@ import React, {Component} from 'react'
 import s from './List.module.css'
 import ListItem from './ListItem';
 import SearchBar from './SearchBar';
-
 function hashCode(s) {
   for(var i = 0, h = 0; i < s.length; i++)
       h = Math.imul(31, h) + s.charCodeAt(i) | 0;
   return h;
 }
+
+
 
 class List extends Component{
   // constructor(props){
@@ -26,7 +27,6 @@ class List extends Component{
   //     }) //en los componentes de clases no haces return tal, tenes que pasar un obj que tenga la prop a modificar
   //   }
   // }
-
   // onClose = (i) => { //esta no es necesario bindearla porque al ser un arrow function se bindea de una
   //   let newItems = this.state.items.filter(item => item !== i)
   //   this.setState({items : newItems})
