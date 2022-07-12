@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from '../components/NavBar.js'
 import List from '../components/List.js'
 import {Switch, Route, Link} from 'react-router-dom';
-
+import axios from 'axios'
 class App extends Component{
   constructor(props){
     super(props)
@@ -21,10 +21,16 @@ class App extends Component{
       }) //en los componentes de clases no haces return tal, tenes que pasar un obj que tenga la prop a modificar
     }
   }
-  
 
-  jajaja(d){
-    console.log(d)
+  componentDidMount(){
+    const user = {
+      username: "dsadsadasdasdasdsadasd",
+      first_name: "juan",
+      last_name: "perez",
+      phone: "+54 2345 67534",
+      password: "pass123",
+    };  
+    axios.post('https://pruebahenrybootcamp.herokuapp.com/register', user).then(() => console.log('Termine!'))
   }
   
   onClose = (i) => { //esta no es necesario bindearla porque al ser un arrow function se bindea de una
